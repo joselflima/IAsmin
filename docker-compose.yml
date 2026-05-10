@@ -1,0 +1,9 @@
+services:
+  iasmin-bot:
+    build: .
+    container_name: iasmin-bot
+    restart: always
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MCP_BRASIL_URL=${MCP_BRASIL_URL}
